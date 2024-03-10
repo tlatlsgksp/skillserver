@@ -6,7 +6,7 @@ const crawlingMealMetropoleDormitory = require('./crawl_metropole_dormitory');
 
 const app = express();
 const port = 8080;
-const browser = await puppeteer.launch({
+const browser = puppeteer.launch({
 	args: ['--no-sandbox', '--disable-setuid-sandbox']
 });
 //app.use(express.static(__dirname));
